@@ -1,3 +1,3 @@
 # Summary
 
-- [Leet Code Samples](content/leetcode.md)
+- [Leet Code Samples](content/LeetCode.md)
