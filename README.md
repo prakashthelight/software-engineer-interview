@@ -2,6 +2,8 @@
 
 This repositiory would contain all of my notes, codes and other resources needed when preparing for any Software Engineer position.
 
+Inspired by: [Orr Sella](https://github.com/orrsella)
+
 ## Summary
 
 - [Java](content/Java.md)
