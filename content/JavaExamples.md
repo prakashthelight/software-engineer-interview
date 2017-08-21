@@ -27,11 +27,13 @@ Double d = Double.valueOf("3.14");
 ## Common String Operations
 
 ```java
+
+// initializing
 String s = "hello";
 String s = String.valueOf(123);
 String s = new String("hello");
 String s = new String(new char[] {'h', 'e', 'l', 'l', 'o'});
-// or new String(chars) for char[]
+
 
 char c = s.charAt(index);
 int res = s.compareTo("abd"); // == -1 (compare lexicographically; also: compareToIgnoreCase)
