@@ -6,12 +6,13 @@
 int[] a = new int[10];
 int[] b = new int[]{34};
 int[] c = {34};
-int[][] matrix = new [2][3];
+int[][] matrix = new int[2][3];
+int[][] grid = {{1, 2, 3},{4, 5, 6}};
 ```
 ## Number Parsing
 
 ```java
-// java.lang.NumberFormatException thrown for bad formatting:
+// throws java.lang.NumberFormatException for bad strings
 int i = Integer.parseInt("42");
 float f = Float.parseFloat("1.2");
 long l = Long.parseLong("1000");
@@ -26,9 +27,11 @@ Double d = Double.valueOf("3.14");
 ## Common String Operations
 
 ```java
-String s = "abcdefg";
-String s = String.valueOf(1);
-String s = new String("abc") // or new String(chars) for char[]
+String s = "hello";
+String s = String.valueOf(123);
+String s = new String("hello");
+String s = new String(new char[] {'h', 'e', 'l', 'l', 'o'});
+// or new String(chars) for char[]
 
 char c = s.charAt(index);
 int res = s.compareTo("abd"); // == -1 (compare lexicographically; also: compareToIgnoreCase)

@@ -1,6 +1,6 @@
 # Software Engineering Interview Preparation
 
-This repositiory would contain all of my notes, codes and other resources needed when preparing for any Software Engineer position.
+This repository would contain all of my notes, codes and other resources needed when preparing for any Software Engineer position.
 
 Inspired by: [Orr Sella](https://github.com/orrsella)
 
@@ -12,5 +12,5 @@ Inspired by: [Orr Sella](https://github.com/orrsella)
 - [Algorithms](content/Algorithms.md)
 - [Algorithms Code Examples](content/AlgorithmsExamples.md)
 - [Dynamic Programming](content/DynamicProgramming.md)
-- [Leet Code Samples](content/LeetCode.md)
+- [LeetCode Samples](content/LeetCode.md)
 - [Cracking Coding Samples](content/CrackingCoding.md)
