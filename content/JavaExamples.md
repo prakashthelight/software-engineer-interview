@@ -1,21 +1,13 @@
 # Java Examples
 
-## Arrays
 
-```java
-int[] a = new int[10];
-int[] b = new int[]{34};
-int[] c = {34};
-int[][] matrix = new int[2][3];
-int[][] grid = {{1, 2, 3},{4, 5, 6}};
-```
 ## Number Parsing
 
 ```java
 // throws java.lang.NumberFormatException for bad strings
-int i = Integer.parseInt("42");
+int i = Integer.parseInt("12");
 float f = Float.parseFloat("1.2");
-long l = Long.parseLong("1000");
+long l = Long.parseLong("12000");
 double d = Double.parseDouble("3.14");
 
 // or with Objects instead of primitives (parsed the same):
@@ -27,17 +19,17 @@ Double d = Double.valueOf("3.14");
 ## Common String Operations
 
 ```java
-
 // initializing
-String s = "hello";
+String s = "hello world"; // string literal
 String s = String.valueOf(123);
-String s = new String("hello");
-String s = new String(new char[] {'h', 'e', 'l', 'l', 'o'});
-
+String s = new String("hello"); // string parameter
+String s = new String(new char[] {'h', 'e', 'l', 'l', 'o'}); // char array parameter
 
 char c = s.charAt(index);
 int res = s.compareTo("abd"); // == -1 (compare lexicographically; also: compareToIgnoreCase)
+
 boolean b1 = s.contains("abc"); // true
+
 boolean b2 = s.endsWith("efg"); // true
 boolean b3 = s.equalsIgnoreCase("AbCDeFg"); // true
 byte[] bytes = s.getBytes(); // {97, 98, 99} (array of 8-bit numbers [-128,127])
@@ -52,7 +44,9 @@ String s4 = s.replaceAll("[a-z]", "x");
 String[] arr = s.split("[0-9]"); // split around digits and remove them from output
 boolean b5 = s.startsWith("abc"); // true
 String sub = s.substring(startIncluding, endExcluding);
+
 char[] chars = s.toCharArray();
+
 String lower = s.toLowerCase(); // also: toUpperCase
 String trimmed = s.trim(); // remove any leading/trailing whitespace
 ```
