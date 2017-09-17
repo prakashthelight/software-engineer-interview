@@ -129,3 +129,63 @@ private static void merge(int[] array, int start, int end) {
 	System.arraycopy(temp, 0, array, start, temp.length);
 }
 ```
+## Quick Sort
+```java
+/**
+ * sorts an array using quick sort Algorithm
+ *
+ * @param array
+ */
+public static void quickSort(int[] array) {
+	if (array == null) {
+		return;
+	}
+
+	quickSort(array, 0, array.length - 1);
+}
+
+/**
+ * recursive quick sort method
+ * @param array
+ * @param start
+ * @param end
+ */
+private static void quickSort(int[] array, int start, int end) {
+	if (start >= end) {
+		return;
+	}
+
+	int pivot = array[(start + end) / 2];
+	int index = partition(array, start, end, pivot);
+	quickSort(array, start, index - 1);
+	quickSort(array, index, end);
+}
+
+private static int partition(int[] array, int start, int end, int pivot) {
+
+	// two pointer traversal, till they cross each other
+	while (start <= end) {
+		// iterate to item greater than pivot
+		while (array[start] < pivot) {
+			start++;
+		}
+
+		// iterate to item lower than pivot
+		while (array[end] > pivot) {
+			end--;
+		}
+
+		// see if they can be swapped, if they are opposite side of pivot
+		// e.g. 6 - > 4 -> 2, for pivot 4, 6 and 2 should be swapped with each other
+		if (start <= end) {
+			int temp = array[start];
+			array[start] = array[end];
+			array[end] = temp;
+			start++;
+			end--;
+		}
+	}
+
+	return start;
+}
+```
