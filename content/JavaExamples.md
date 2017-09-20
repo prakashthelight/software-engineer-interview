@@ -1,7 +1,16 @@
 # Java Examples
 
+## Arrays and Strings
 
-## Number Parsing
+## Collections
+
+## Comparator And Comparable
+
+## Reflection APIs
+
+## Number Parsing & Formatting
+
+## Date Time Parsing & Formatting
 
 ```java
 // throws java.lang.NumberFormatException for bad strings

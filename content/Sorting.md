@@ -189,3 +189,6 @@ private static int partition(int[] array, int start, int end, int pivot) {
 	return start;
 }
 ```
+## Bucket Sort
+## Counting Sort
+## Heap Sort
