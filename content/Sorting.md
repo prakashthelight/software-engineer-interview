@@ -1,4 +1,4 @@
-# Sorting
+# Sorting Algorithms
 
 ## Bubble Sort
 
