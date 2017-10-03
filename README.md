@@ -18,3 +18,5 @@ Inspired by: [Orr Sella](https://github.com/orrsella)
 - [JavaScript](content/JavaScript.md)
 - [JavaScript Examples](content/JavaScriptExamples.md)
 - [LeetCode Samples](content/LeetCode.md)
+
+- [Hit & Miss](content/HitsAndMisses.md)
