@@ -58,7 +58,7 @@ public static void selectionSort(int[] array) {
 ## Insertion Sort
 ```java
 /**
- * sorts array using selection sort algorithm - O(n^2)
+ * sorts array using insertion sort algorithm - Worst O(n^2) | Best O(n)
  *
  * @param array
  */
