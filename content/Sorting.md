@@ -55,6 +55,31 @@ public static void selectionSort(int[] array) {
 }
 ```
 
+## Insertion Sort
+```java
+/**
+ * sorts array using selection sort algorithm - O(n^2)
+ *
+ * @param array
+ */
+public static void insertionSort(int[] nums) {
+        for (int i = 0; i < nums.length; i++) {
+            // get the element at current position i
+            int temp = nums[i];
+            int prev = i - 1;
+
+            // swap all elements to left, if bigger than current position element
+            while (prev >= 0 && nums[prev] > temp) {
+                nums[prev + 1] = nums[prev];
+                prev--;
+            }
+
+            // insert the current position (i) element to its correct position after shifting
+            nums[prev + 1] = temp;
+        }
+    }
+```
+
 ## Merge Sort
 
 ```java
