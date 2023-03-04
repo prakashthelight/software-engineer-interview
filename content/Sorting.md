@@ -68,7 +68,7 @@ public static void insertionSort(int[] nums) {
             int temp = nums[i];
             int prev = i - 1;
 
-            // swap all elements to left, if bigger than current position element
+            // shift all elements to right, if bigger than current position element
             while (prev >= 0 && nums[prev] > temp) {
                 nums[prev + 1] = nums[prev];
                 prev--;
